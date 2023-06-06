@@ -1,0 +1,7 @@
+name: Rsvp List
+type: module
+package: Rsvp
+configure: rsvp.admin_settings
+version: 1.0
+description: 'this rsvp list module'
+core_version_requirement: ^8 || ^9

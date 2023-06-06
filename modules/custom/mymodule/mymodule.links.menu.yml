@@ -1,0 +1,7 @@
+mymodule.newpage:
+    title: 'mymodule menu'
+    description: 'mymodule menue desc'
+    route_name: mymodule.content
+    menu_name: main
+    weight: 10
+
