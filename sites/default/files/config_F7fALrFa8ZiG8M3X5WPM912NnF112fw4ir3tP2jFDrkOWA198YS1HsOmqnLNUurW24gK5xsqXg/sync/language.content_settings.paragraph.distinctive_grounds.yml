@@ -1,0 +1,18 @@
+uuid: 3390388f-c208-4ee7-92e4-d278871287ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.distinctive_grounds
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.distinctive_grounds
+target_entity_type_id: paragraph
+target_bundle: distinctive_grounds
+default_langcode: site_default
+language_alterable: false

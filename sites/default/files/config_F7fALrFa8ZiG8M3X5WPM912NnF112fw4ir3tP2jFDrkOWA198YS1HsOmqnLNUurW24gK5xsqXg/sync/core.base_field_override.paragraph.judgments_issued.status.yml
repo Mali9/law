@@ -1,0 +1,22 @@
+uuid: 9ca1a0bc-e9b7-4834-9213-ec2f10c0d7f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.judgments_issued
+id: paragraph.judgments_issued.status
+field_name: status
+entity_type: paragraph
+bundle: judgments_issued
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

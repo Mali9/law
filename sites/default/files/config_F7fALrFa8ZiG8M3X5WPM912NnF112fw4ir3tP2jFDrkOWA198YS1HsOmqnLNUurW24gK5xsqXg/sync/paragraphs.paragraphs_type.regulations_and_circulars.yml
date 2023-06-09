@@ -1,0 +1,10 @@
+uuid: f9046839-3444-45c3-9e7a-9c8cfc2f448f
+langcode: en
+status: true
+dependencies: {  }
+id: regulations_and_circulars
+label: 'Regulations And Circulars'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

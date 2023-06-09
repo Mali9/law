@@ -1,0 +1,40 @@
+uuid: 2eb34173-cc5f-49fb-94dd-b6299b617c19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_improper_administrative
+    - node.type.templates
+    - paragraphs.paragraphs_type.improper_administrative
+  module:
+    - entity_reference_revisions
+id: node.templates.field_improper_administrative
+field_name: field_improper_administrative
+entity_type: node
+bundle: templates
+label: 'Improper administrative'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      improper_administrative: improper_administrative
+    negate: 0
+    target_bundles_drag_drop:
+      distinctive_grounds:
+        weight: 6
+        enabled: false
+      improper_administrative:
+        weight: 5
+        enabled: true
+      judgments_issued:
+        weight: 7
+        enabled: false
+      regulations_and_circulars:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

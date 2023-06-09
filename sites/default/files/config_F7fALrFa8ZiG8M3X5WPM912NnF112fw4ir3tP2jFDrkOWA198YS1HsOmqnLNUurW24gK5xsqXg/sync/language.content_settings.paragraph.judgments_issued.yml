@@ -1,0 +1,18 @@
+uuid: 1230c6f1-602c-4512-8c7d-427f7c3ba0c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.judgments_issued
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.judgments_issued
+target_entity_type_id: paragraph
+target_bundle: judgments_issued
+default_langcode: site_default
+language_alterable: false

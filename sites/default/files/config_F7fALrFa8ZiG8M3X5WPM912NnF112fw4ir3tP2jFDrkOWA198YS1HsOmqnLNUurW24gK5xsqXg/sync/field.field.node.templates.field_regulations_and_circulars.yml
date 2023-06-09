@@ -1,0 +1,34 @@
+uuid: a9d7433b-eb6f-47ac-978e-4a23e52092b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_regulations_and_circulars
+    - node.type.templates
+    - paragraphs.paragraphs_type.regulations_and_circulars
+  module:
+    - entity_reference_revisions
+id: node.templates.field_regulations_and_circulars
+field_name: field_regulations_and_circulars
+entity_type: node
+bundle: templates
+label: 'Regulations And Circulars'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      regulations_and_circulars: regulations_and_circulars
+    negate: 0
+    target_bundles_drag_drop:
+      judgments_issued:
+        weight: 4
+        enabled: false
+      regulations_and_circulars:
+        weight: 3
+        enabled: true
+field_type: entity_reference_revisions

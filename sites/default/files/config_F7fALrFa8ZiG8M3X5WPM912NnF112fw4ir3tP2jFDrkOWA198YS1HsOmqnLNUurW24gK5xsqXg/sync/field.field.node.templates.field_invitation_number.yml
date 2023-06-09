@@ -1,0 +1,23 @@
+uuid: d25d9f06-0937-4694-8fd6-d589ad679551
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_invitation_number
+    - node.type.templates
+id: node.templates.field_invitation_number
+field_name: field_invitation_number
+entity_type: node
+bundle: templates
+label: 'Invitation Number'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

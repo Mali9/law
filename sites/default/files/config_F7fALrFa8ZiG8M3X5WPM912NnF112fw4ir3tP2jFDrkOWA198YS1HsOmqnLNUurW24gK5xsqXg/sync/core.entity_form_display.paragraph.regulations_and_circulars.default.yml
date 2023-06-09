@@ -1,0 +1,40 @@
+uuid: 576c8774-134f-4d11-932b-5d49c96fab19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.regulations_and_circulars.field_article_number
+    - field.field.paragraph.regulations_and_circulars.field_body
+    - field.field.paragraph.regulations_and_circulars.field_system_name
+    - paragraphs.paragraphs_type.regulations_and_circulars
+  module:
+    - text
+id: paragraph.regulations_and_circulars.default
+targetEntityType: paragraph
+bundle: regulations_and_circulars
+mode: default
+content:
+  field_article_number:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_body:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_system_name:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

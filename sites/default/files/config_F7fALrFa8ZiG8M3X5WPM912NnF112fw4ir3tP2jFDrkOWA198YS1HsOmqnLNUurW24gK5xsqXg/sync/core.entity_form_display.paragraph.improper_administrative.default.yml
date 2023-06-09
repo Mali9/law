@@ -1,0 +1,32 @@
+uuid: f8f83a89-92d6-424f-97fc-c8c0eb23257f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.improper_administrative.field_body_improper
+    - field.field.paragraph.improper_administrative.field_improper_administrative
+    - paragraphs.paragraphs_type.improper_administrative
+  module:
+    - text
+id: paragraph.improper_administrative.default
+targetEntityType: paragraph
+bundle: improper_administrative
+mode: default
+content:
+  field_body_improper:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_improper_administrative:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

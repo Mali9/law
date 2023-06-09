@@ -1,0 +1,21 @@
+uuid: 008306b5-963e-4e4c-927a-c9a911481dcc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_challenges_faced
+    - node.type.templates
+  module:
+    - text
+id: node.templates.field_challenges_faced
+field_name: field_challenges_faced
+entity_type: node
+bundle: templates
+label: 'challenges faced'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

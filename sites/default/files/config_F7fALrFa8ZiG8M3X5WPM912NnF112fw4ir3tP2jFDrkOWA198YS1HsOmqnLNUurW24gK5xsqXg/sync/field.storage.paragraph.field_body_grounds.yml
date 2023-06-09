@@ -1,0 +1,19 @@
+uuid: 92f26d3a-908b-4269-bc11-26eb2d2cf7fa
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_body_grounds
+field_name: field_body_grounds
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: c747ca3b-2439-4de0-9f60-895f157235b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_negatives
+    - node.type.templates
+  module:
+    - text
+id: node.templates.field_negatives
+field_name: field_negatives
+entity_type: node
+bundle: templates
+label: Negatives
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

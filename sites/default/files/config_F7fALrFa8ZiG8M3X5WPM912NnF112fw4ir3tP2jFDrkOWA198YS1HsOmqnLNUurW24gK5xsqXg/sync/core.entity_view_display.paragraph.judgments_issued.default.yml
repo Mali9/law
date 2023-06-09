@@ -1,0 +1,33 @@
+uuid: 866f4166-d582-4b70-9d90-fe4ae1e2a70f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.judgments_issued.field_date
+    - field.field.paragraph.judgments_issued.field_judgments_issued
+    - paragraphs.paragraphs_type.judgments_issued
+  module:
+    - datetime
+id: paragraph.judgments_issued.default
+targetEntityType: paragraph
+bundle: judgments_issued
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_judgments_issued:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

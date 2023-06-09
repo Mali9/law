@@ -1,0 +1,29 @@
+uuid: f762cd42-c3bb-4536-bcb8-d1a59ef50f40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_judgments_issued
+    - paragraphs.paragraphs_type.judgments_issued
+    - taxonomy.vocabulary.judgments_issued
+id: paragraph.judgments_issued.field_judgments_issued
+field_name: field_judgments_issued
+entity_type: paragraph
+bundle: judgments_issued
+label: 'Judgments issued'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      judgments_issued: judgments_issued
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

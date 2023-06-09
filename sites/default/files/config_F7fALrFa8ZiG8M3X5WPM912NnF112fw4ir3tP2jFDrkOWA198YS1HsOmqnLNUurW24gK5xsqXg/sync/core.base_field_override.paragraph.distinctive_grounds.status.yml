@@ -1,0 +1,22 @@
+uuid: c7e8a6a0-4686-4cb5-baee-5e322f6ed5ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.distinctive_grounds
+id: paragraph.distinctive_grounds.status
+field_name: status
+entity_type: paragraph
+bundle: distinctive_grounds
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

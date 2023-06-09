@@ -1,0 +1,24 @@
+uuid: 10ded914-c277-4e0c-bc48-8301f0a68161
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date
+    - paragraphs.paragraphs_type.judgments_issued
+  module:
+    - datetime
+id: paragraph.judgments_issued.field_date
+field_name: field_date
+entity_type: paragraph
+bundle: judgments_issued
+label: Date
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_date_type: now
+    default_date: now
+default_value_callback: ''
+settings: {  }
+field_type: datetime

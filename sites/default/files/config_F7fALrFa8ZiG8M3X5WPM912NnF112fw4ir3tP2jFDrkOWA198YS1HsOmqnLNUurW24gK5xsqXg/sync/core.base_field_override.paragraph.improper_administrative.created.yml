@@ -1,0 +1,18 @@
+uuid: 7f5061c3-64a4-4679-9e4b-9244745360f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.improper_administrative
+id: paragraph.improper_administrative.created
+field_name: created
+entity_type: paragraph
+bundle: improper_administrative
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,21 @@
+uuid: 888aa173-4bfb-4440-a55c-3b7efd53b13c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_grounds
+    - paragraphs.paragraphs_type.distinctive_grounds
+  module:
+    - text
+id: paragraph.distinctive_grounds.field_body_grounds
+field_name: field_body_grounds
+entity_type: paragraph
+bundle: distinctive_grounds
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

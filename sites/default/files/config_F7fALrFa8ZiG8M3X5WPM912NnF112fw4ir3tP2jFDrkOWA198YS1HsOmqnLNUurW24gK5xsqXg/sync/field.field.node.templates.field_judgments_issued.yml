@@ -1,0 +1,31 @@
+uuid: 9731d0f0-a7aa-484d-83a9-22af0428fbfd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_judgments_issued
+    - node.type.templates
+    - paragraphs.paragraphs_type.judgments_issued
+  module:
+    - entity_reference_revisions
+id: node.templates.field_judgments_issued
+field_name: field_judgments_issued
+entity_type: node
+bundle: templates
+label: 'Judgments issued'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      judgments_issued: judgments_issued
+    negate: 0
+    target_bundles_drag_drop:
+      judgments_issued:
+        weight: 2
+        enabled: true
+field_type: entity_reference_revisions

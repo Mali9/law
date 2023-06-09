@@ -1,0 +1,23 @@
+uuid: ad5470a5-0ba6-433b-80fb-4a39cc1c7aba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_age_
+    - node.type.templates
+id: node.templates.field_case_age_
+field_name: field_case_age_
+entity_type: node
+bundle: templates
+label: 'Case Age '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

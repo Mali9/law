@@ -1,0 +1,10 @@
+uuid: 06190d84-6010-4d00-8ab5-e9124aee4903
+langcode: en
+status: true
+dependencies: {  }
+id: judgments_issued
+label: 'Judgments issued'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

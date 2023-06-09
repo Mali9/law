@@ -1,0 +1,21 @@
+uuid: 0a20a951-a7c9-4d51-989b-fb2c2691d4c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - node
+    - paragraphs
+id: node.field_regulations_and_circulars
+field_name: field_regulations_and_circulars
+entity_type: node
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

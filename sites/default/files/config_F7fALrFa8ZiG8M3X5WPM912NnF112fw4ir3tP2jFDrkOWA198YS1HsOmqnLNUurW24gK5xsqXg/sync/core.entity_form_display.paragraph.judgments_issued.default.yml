@@ -1,0 +1,30 @@
+uuid: 38a53552-3d28-44be-9c99-8feac21ea464
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.judgments_issued.field_date
+    - field.field.paragraph.judgments_issued.field_judgments_issued
+    - paragraphs.paragraphs_type.judgments_issued
+  module:
+    - datetime
+id: paragraph.judgments_issued.default
+targetEntityType: paragraph
+bundle: judgments_issued
+mode: default
+content:
+  field_date:
+    type: datetime_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_judgments_issued:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

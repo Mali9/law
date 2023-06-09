@@ -1,0 +1,23 @@
+uuid: f83b81d9-879f-4afb-989c-7ffac0330a7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_article_number
+    - paragraphs.paragraphs_type.regulations_and_circulars
+id: paragraph.regulations_and_circulars.field_article_number
+field_name: field_article_number
+entity_type: paragraph
+bundle: regulations_and_circulars
+label: 'Article number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,8 @@
+uuid: 3c90704f-fed8-494f-a90e-6c84033dc3f2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Judgments issued'
+vid: judgments_issued
+description: ''
+weight: 0

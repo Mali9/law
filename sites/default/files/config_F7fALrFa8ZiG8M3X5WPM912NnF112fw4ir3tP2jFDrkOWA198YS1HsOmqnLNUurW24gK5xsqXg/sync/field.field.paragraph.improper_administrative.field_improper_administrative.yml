@@ -1,0 +1,29 @@
+uuid: b09a1eeb-6b9f-4f66-b42a-073b9ae981a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_improper_administrative
+    - paragraphs.paragraphs_type.improper_administrative
+    - taxonomy.vocabulary.improper_administrative
+id: paragraph.improper_administrative.field_improper_administrative
+field_name: field_improper_administrative
+entity_type: paragraph
+bundle: improper_administrative
+label: 'Improper administrative'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      improper_administrative: improper_administrative
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

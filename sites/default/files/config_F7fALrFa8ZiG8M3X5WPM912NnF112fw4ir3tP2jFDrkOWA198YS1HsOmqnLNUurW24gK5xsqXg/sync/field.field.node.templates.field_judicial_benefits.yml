@@ -1,0 +1,19 @@
+uuid: 3e205cbb-85d2-4063-8c06-3aeca8d4e315
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_judicial_benefits
+    - node.type.templates
+id: node.templates.field_judicial_benefits
+field_name: field_judicial_benefits
+entity_type: node
+bundle: templates
+label: 'judicial benefits'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

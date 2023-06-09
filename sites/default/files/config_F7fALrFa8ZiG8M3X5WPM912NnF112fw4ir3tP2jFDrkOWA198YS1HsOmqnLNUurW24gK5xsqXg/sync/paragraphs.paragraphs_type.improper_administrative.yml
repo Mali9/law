@@ -1,0 +1,10 @@
+uuid: 834ea975-96a6-4817-8176-bba3ffd55f1f
+langcode: en
+status: true
+dependencies: {  }
+id: improper_administrative
+label: 'Improper administrative'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,40 @@
+uuid: fad1906f-7ec4-403a-947b-b5263fba3341
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.distinctive_grounds.field_body_grounds
+    - field.field.paragraph.distinctive_grounds.field_material_number
+    - field.field.paragraph.distinctive_grounds.field_system_name_grounds
+    - paragraphs.paragraphs_type.distinctive_grounds
+  module:
+    - text
+id: paragraph.distinctive_grounds.default
+targetEntityType: paragraph
+bundle: distinctive_grounds
+mode: default
+content:
+  field_body_grounds:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_material_number:
+    type: number
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_system_name_grounds:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

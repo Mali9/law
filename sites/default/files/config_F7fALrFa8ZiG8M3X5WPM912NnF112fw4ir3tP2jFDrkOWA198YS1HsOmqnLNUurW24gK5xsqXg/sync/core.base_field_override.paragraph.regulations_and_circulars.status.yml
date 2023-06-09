@@ -1,0 +1,22 @@
+uuid: 2a37ebac-fb56-47c8-bad3-e2014eaed0b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.regulations_and_circulars
+id: paragraph.regulations_and_circulars.status
+field_name: status
+entity_type: paragraph
+bundle: regulations_and_circulars
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

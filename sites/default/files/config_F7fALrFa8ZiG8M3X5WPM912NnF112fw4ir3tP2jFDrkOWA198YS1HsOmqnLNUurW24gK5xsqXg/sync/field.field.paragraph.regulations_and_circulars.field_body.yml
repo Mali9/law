@@ -1,0 +1,21 @@
+uuid: de098a00-c03b-4414-95b1-c38bd17b606b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.regulations_and_circulars
+  module:
+    - text
+id: paragraph.regulations_and_circulars.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: regulations_and_circulars
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,41 @@
+uuid: ffe6c395-a81b-47c3-ae30-a3523d4a39af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.distinctive_grounds.field_body_grounds
+    - field.field.paragraph.distinctive_grounds.field_material_number
+    - field.field.paragraph.distinctive_grounds.field_system_name_grounds
+    - paragraphs.paragraphs_type.distinctive_grounds
+  module:
+    - text
+id: paragraph.distinctive_grounds.default
+targetEntityType: paragraph
+bundle: distinctive_grounds
+mode: default
+content:
+  field_body_grounds:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_material_number:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_system_name_grounds:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

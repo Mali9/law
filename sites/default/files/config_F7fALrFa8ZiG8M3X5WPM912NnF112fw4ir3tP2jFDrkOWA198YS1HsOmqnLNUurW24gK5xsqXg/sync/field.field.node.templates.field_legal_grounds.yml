@@ -1,0 +1,21 @@
+uuid: 7dbad35d-96a3-423a-ab2b-20356793f467
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_legal_grounds
+    - node.type.templates
+  module:
+    - text
+id: node.templates.field_legal_grounds
+field_name: field_legal_grounds
+entity_type: node
+bundle: templates
+label: 'Legal Grounds'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

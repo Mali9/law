@@ -1,0 +1,18 @@
+display:
+  default:
+    display_options:
+      title: Cards
+      fields:
+        nid:
+          label: ' ID'
+        field_invitation_number:
+          label: 'Invitation Number'
+        field_category:
+          label: Category
+        field_judgments_issued:
+          label: 'Judgments issued'
+      filters:
+        field_invitation_number_value:
+          expose:
+            label: 'Case Number'
+label: Cards

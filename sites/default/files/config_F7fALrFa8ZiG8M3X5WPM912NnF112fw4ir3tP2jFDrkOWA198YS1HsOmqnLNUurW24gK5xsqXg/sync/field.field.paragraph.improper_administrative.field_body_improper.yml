@@ -1,0 +1,21 @@
+uuid: f782ce27-2d6a-4e80-bbc1-a76d4bf46bd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body_improper
+    - paragraphs.paragraphs_type.improper_administrative
+  module:
+    - text
+id: paragraph.improper_administrative.field_body_improper
+field_name: field_body_improper
+entity_type: paragraph
+bundle: improper_administrative
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

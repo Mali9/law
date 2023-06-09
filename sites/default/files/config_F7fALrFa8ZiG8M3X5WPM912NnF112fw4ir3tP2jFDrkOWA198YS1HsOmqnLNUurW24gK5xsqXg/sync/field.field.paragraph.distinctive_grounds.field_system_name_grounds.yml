@@ -1,0 +1,29 @@
+uuid: 8666700e-52ad-418a-9b0e-948c8b8e1462
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_system_name_grounds
+    - paragraphs.paragraphs_type.distinctive_grounds
+    - taxonomy.vocabulary.system_name
+id: paragraph.distinctive_grounds.field_system_name_grounds
+field_name: field_system_name_grounds
+entity_type: paragraph
+bundle: distinctive_grounds
+label: 'System Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      system_name: system_name
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: a2616eb3-f40c-44a4-87c9-a5cdb9f95b7f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.improper_administrative
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.improper_administrative
+target_entity_type_id: taxonomy_term
+target_bundle: improper_administrative
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+uuid: 196375b5-6be7-40c8-bb55-2015ba12aeeb
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.regulations_and_circulars
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.regulations_and_circulars
+target_entity_type_id: paragraph
+target_bundle: regulations_and_circulars
+default_langcode: site_default
+language_alterable: false
