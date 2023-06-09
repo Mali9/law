@@ -80,7 +80,8 @@ temporary sql dump files created during [sql:sync](https://www.drush.org/latest/
 defaults to `$HOME/drush-backups`.
 ```yml
 drush:
-  backup-dir: /tmp/drush-backups
+  paths:
+    backup-dir: /tmp/drush-backups
 ```
 
 #### Global options
@@ -100,10 +101,14 @@ options:
 ```yml
 command:
   sql:
+    cli:
+      options:
+        # Enable auto-complete in MySQL.
+        extra: "--auto-rehash"
     dump:
       options:
         # Omit cache and similar tables (including during a sql:sync).
-          structure-tables-key: common
+        structure-tables-key: common
   php:
     script:
       options:
