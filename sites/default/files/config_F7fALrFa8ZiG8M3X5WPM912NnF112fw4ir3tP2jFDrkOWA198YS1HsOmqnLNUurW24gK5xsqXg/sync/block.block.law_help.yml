@@ -1,0 +1,22 @@
+uuid: 3b201362-35af-4e9b-ad0a-603aeb28e1ab
+langcode: ar
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - law
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: law_help
+theme: law
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

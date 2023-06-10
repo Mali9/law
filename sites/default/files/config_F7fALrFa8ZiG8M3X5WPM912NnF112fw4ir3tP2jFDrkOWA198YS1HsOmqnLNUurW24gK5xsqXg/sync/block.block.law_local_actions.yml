@@ -1,0 +1,20 @@
+uuid: f171b2d3-06a8-44f7-a291-d30a70851c1e
+langcode: ar
+status: false
+dependencies:
+  theme:
+    - law
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: law_local_actions
+theme: law
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

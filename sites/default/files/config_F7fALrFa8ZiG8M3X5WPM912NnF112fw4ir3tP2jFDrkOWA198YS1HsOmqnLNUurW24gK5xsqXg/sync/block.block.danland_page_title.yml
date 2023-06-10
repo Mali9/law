@@ -1,0 +1,20 @@
+uuid: eacd2dae-57c7-4072-81cd-c111e43c1995
+langcode: ar
+status: true
+dependencies:
+  theme:
+    - danland
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: danland_page_title
+theme: danland
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,26 @@
+uuid: d6fea92b-70f8-42ff-b3b4-603ec2839e59
+langcode: ar
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - law
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: law_page_title
+theme: law
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /cards

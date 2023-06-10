@@ -15,8 +15,11 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
+    - rest
+    - serialization
     - taxonomy
     - user
+    - views_data_export
 id: albta
 label: البطاقات
 module: views
@@ -1093,6 +1096,34 @@ display:
         - 'languages:language_interface'
         - url
         - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_category'
+        - 'config:field.storage.node.field_invitation_number'
+        - 'config:field.storage.node.field_judgments_issued'
+  data_export_1:
+    id: data_export_1
+    display_title: 'Data export'
+    display_plugin: data_export
+    position: 2
+    display_options:
+      display_extenders: {  }
+      path: export/cards
+      filename: ''
+      automatic_download: true
+      store_in_public_file_directory: null
+      custom_redirect_path: false
+      redirect_to_display: none
+      include_query_params: true
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - request_format
+        - url
         - user
         - 'user.node_grants:view'
         - user.permissions

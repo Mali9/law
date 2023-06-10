@@ -1,0 +1,22 @@
+uuid: 85f8e31f-245a-4a7c-94c3-91a0c4e9b7bf
+langcode: ar
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - law
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: law_messages
+theme: law
+region: header
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

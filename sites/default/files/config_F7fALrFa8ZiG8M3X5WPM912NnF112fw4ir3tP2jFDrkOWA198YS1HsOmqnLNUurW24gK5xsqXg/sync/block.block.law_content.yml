@@ -1,0 +1,22 @@
+uuid: 7cb3e992-79dc-49f0-b640-0c68eeb6db92
+langcode: ar
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - law
+_core:
+  default_config_hash: kigu8pTxXt1qGR2NJ5HHdC4G2G1wsDrIjLPKBT5wUBc
+id: law_content
+theme: law
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
