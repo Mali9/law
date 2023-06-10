@@ -1,0 +1,32 @@
+<?php
+
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_preprocess_menu_link().
+ */
+function law_preprocess_menu(&$variables) {
+    // Check if the menu name is "header".
+    if ($variables['menu_name'] === 'header') {
+      // Loop through each menu link and add a custom class.
+      foreach ($variables['items'] as &$item) {
+        $item['attributes']->addClass('my-custom-class');
+      }
+    }
+  }
+
+  /**
+ * Implements hook_preprocess_HOOK() for page templates.
+ */
+function law_preprocess_page(&$variables) {
+    // Get the current route name.
+    $current_route_name = \Drupal::routeMatch()->getRouteName();
+    // Hide specific sections on the "view" page.
+    if ($current_route_name == 'entity.view.canonical') {
+        dump('jjj'); die;
+
+      $variables['hide_hero_section'] = TRUE;
+      $variables['hide_featured_products_section'] = TRUE;
+    }
+  }
+

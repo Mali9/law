@@ -1,0 +1,21 @@
+name: Law Theme
+type: theme
+description: 'Dar subtheme from Bootstrap Barrio Theme.'
+core: 8.x
+core_version_requirement: ^8 || ^9
+base theme: bootstrap_barrio
+libraries:
+  - law/global-styling
+libraries-override:
+  bootstrap_barrio/global-styling: false
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  page_top: 'Page top'
+  breadcrumb: Breadcrumb
+  content: Content
+  footer_first: 'Footer first'
+# Information added by Drupal.org packaging script on 2023-01-05
+version: '5.1.10'
+project: 'law'
+datestamp: 1672908899

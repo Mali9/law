@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '725b34d6dd7a6d64f19775818610d34fc155923e',
+        'reference' => '0e8681ded6bc8963f2f87ddb147a6bc29a8cbfb1',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -262,6 +262,15 @@
             'reference' => '8.x-3.28',
             'dev_requirement' => false,
         ),
+        'drupal/bootstrap_barrio' => array(
+            'pretty_version' => '5.1.10',
+            'version' => '5.1.10.0',
+            'type' => 'drupal-theme',
+            'install_path' => __DIR__ . '/../../themes/contrib/bootstrap_barrio',
+            'aliases' => array(),
+            'reference' => '5.1.10',
+            'dev_requirement' => false,
+        ),
         'drupal/core' => array(
             'pretty_version' => '9.5.9',
             'version' => '9.5.9.0',
@@ -475,6 +484,15 @@
             'reference' => '4.0.4',
             'dev_requirement' => false,
         ),
+        'drupal/danland' => array(
+            'pretty_version' => '1.1.0',
+            'version' => '1.1.0.0',
+            'type' => 'drupal-theme',
+            'install_path' => __DIR__ . '/../../themes/contrib/danland',
+            'aliases' => array(),
+            'reference' => '8.x-1.1',
+            'dev_requirement' => false,
+        ),
         'drupal/devel' => array(
             'pretty_version' => '4.2.1',
             'version' => '4.2.1.0',
@@ -553,7 +571,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '725b34d6dd7a6d64f19775818610d34fc155923e',
+            'reference' => '0e8681ded6bc8963f2f87ddb147a6bc29a8cbfb1',
             'dev_requirement' => false,
         ),
         'drupal/node_export' => array(
@@ -1301,6 +1319,15 @@
             'reference' => 'aeccc4dc52a9e634f1d1eebeb21eacfdcff1053d',
             'dev_requirement' => false,
         ),
+        'twbs/bootstrap' => array(
+            'pretty_version' => 'v4.6.2',
+            'version' => '4.6.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../twbs/bootstrap',
+            'aliases' => array(),
+            'reference' => 'e5643aaa89eb67327a5b4abe7db976f0ea276b70',
+            'dev_requirement' => false,
+        ),
         'twig/twig' => array(
             'pretty_version' => 'v2.15.5',
             'version' => '2.15.5.0',
@@ -1309,6 +1336,12 @@
             'aliases' => array(),
             'reference' => 'fc02a6af3eeb97c4bf5650debc76c2eda85ac22e',
             'dev_requirement' => false,
+        ),
+        'twitter/bootstrap' => array(
+            'dev_requirement' => false,
+            'replaced' => array(
+                0 => 'v4.6.2',
+            ),
         ),
         'typo3/phar-stream-wrapper' => array(
             'pretty_version' => 'v3.1.7',

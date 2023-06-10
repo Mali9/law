@@ -2148,6 +2148,63 @@
             "install-path": "../../themes/contrib/bootstrap"
         },
         {
+            "name": "drupal/bootstrap_barrio",
+            "version": "5.1.10",
+            "version_normalized": "5.1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/bootstrap_barrio.git",
+                "reference": "5.1.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/bootstrap_barrio-5.1.10.zip",
+                "reference": "5.1.10",
+                "shasum": "26222d1519b3e6581c96141750ca9a20ff48e84b"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10",
+                "twbs/bootstrap": "^4.4.1"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "5.1.10",
+                    "datestamp": "1676931875",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alberto Siles",
+                    "homepage": "https://www.drupal.org/user/827704",
+                    "email": "alberto@siles.pe"
+                },
+                {
+                    "name": "Ricardo.Castaneda",
+                    "homepage": "https://www.drupal.org/user/3520894"
+                },
+                {
+                    "name": "WillAcon",
+                    "homepage": "https://www.drupal.org/user/2824325"
+                }
+            ],
+            "description": "Bootstrap 4 base theme.",
+            "homepage": "https://www.drupal.org/project/bootstrap_barrio",
+            "support": {
+                "source": "https://git.drupalcode.org/project/bootstrap_barrio"
+            },
+            "install-path": "../../themes/contrib/bootstrap_barrio"
+        },
+        {
             "name": "drupal/core",
             "version": "9.5.9",
             "version_normalized": "9.5.9.0",
@@ -2698,6 +2755,61 @@
                 "issues": "https://www.drupal.org/project/issues/ctools"
             },
             "install-path": "../../modules/contrib/ctools"
+        },
+        {
+            "name": "drupal/danland",
+            "version": "1.1.0",
+            "version_normalized": "1.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/danland.git",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/danland-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "dea2f166371681bfb04acb34e1983ef90d2b6093"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1605988295",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "danpros",
+                    "homepage": "https://www.drupal.org/user/690640"
+                },
+                {
+                    "name": "jcnventura",
+                    "homepage": "https://www.drupal.org/user/122464"
+                },
+                {
+                    "name": "kunalkapoor",
+                    "homepage": "https://www.drupal.org/user/3601275"
+                }
+            ],
+            "description": "Drupal Theme provided by <a href=\"http://www.danetsoft.com\">Danetsoft</a> developed by <a href=\"http://www.danpros.com\">Danang Probo Sayekti</a> inspired by <a href=\"http://www.maksimer.no\">Maksimer</a>.",
+            "homepage": "https://www.drupal.org/project/danland",
+            "support": {
+                "source": "https://git.drupalcode.org/project/danland"
+            },
+            "install-path": "../../themes/contrib/danland"
         },
         {
             "name": "drupal/devel",
@@ -8857,6 +8969,64 @@
                 }
             ],
             "install-path": "../symfony/yaml"
+        },
+        {
+            "name": "twbs/bootstrap",
+            "version": "v4.6.2",
+            "version_normalized": "4.6.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "e5643aaa89eb67327a5b4abe7db976f0ea276b70"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/e5643aaa89eb67327a5b4abe7db976f0ea276b70",
+                "reference": "e5643aaa89eb67327a5b4abe7db976f0ea276b70",
+                "shasum": ""
+            },
+            "replace": {
+                "twitter/bootstrap": "self.version"
+            },
+            "time": "2022-07-19T15:13:44+00:00",
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3.x-dev"
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                },
+                {
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                }
+            ],
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "https://getbootstrap.com/",
+            "keywords": [
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "mobile-first",
+                "responsive",
+                "sass",
+                "web"
+            ],
+            "support": {
+                "issues": "https://github.com/twbs/bootstrap/issues",
+                "source": "https://github.com/twbs/bootstrap/tree/v4.6.2"
+            },
+            "install-path": "../twbs/bootstrap"
         },
         {
             "name": "twig/twig",
