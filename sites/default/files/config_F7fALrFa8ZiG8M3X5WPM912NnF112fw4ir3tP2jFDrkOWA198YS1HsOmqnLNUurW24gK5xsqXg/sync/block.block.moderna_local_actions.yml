@@ -1,0 +1,20 @@
+uuid: 0b7089b0-bb8e-4a4f-8302-57e9408fbd61
+langcode: ar
+status: false
+dependencies:
+  theme:
+    - moderna
+_core:
+  default_config_hash: XRdb8LpbArVA6CpuuEZxzi50JIdjsJaCCZ5o3fH0Blk
+id: moderna_local_actions
+theme: moderna
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

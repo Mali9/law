@@ -1,0 +1,22 @@
+uuid: 370926c3-e64b-44df-9333-73bf46d6c694
+langcode: ar
+status: false
+dependencies:
+  theme:
+    - moderna
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: moderna_local_tasks
+theme: moderna
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: a2ee9fe2-c199-4d83-8067-f476397b757c
+langcode: ar
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - moderna
+_core:
+  default_config_hash: y0bXRvKYQQKkf_RVxA3aOPGpIfKKsDOzzrWYCgjxJ9Y
+id: moderna_breadcrumbs
+theme: moderna
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

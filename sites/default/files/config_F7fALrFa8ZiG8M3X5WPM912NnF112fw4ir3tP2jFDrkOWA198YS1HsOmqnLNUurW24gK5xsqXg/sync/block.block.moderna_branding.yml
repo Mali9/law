@@ -1,0 +1,25 @@
+uuid: 12dd5144-9387-4fb7-9f8b-3bf4f5bc598f
+langcode: ar
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - moderna
+_core:
+  default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
+id: moderna_branding
+theme: moderna
+region: header
+weight: -5
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

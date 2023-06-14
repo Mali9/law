@@ -1,0 +1,22 @@
+uuid: b2cd3526-32b0-4a1c-8a22-26abfe816296
+langcode: ar
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - moderna
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: moderna_messages
+theme: moderna
+region: header
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

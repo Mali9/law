@@ -1,0 +1,22 @@
+uuid: a826d128-180b-4fa9-b9d8-3be2a522b6ad
+langcode: ar
+status: false
+dependencies:
+  theme:
+    - law_theme
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: law_theme_local_tasks
+theme: law_theme
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

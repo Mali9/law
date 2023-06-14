@@ -1,0 +1,22 @@
+uuid: e91f3bce-31f9-4318-bb12-7af3010eff48
+langcode: ar
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - moderna
+_core:
+  default_config_hash: I6Esh8cDlPdl2POZg4MOSRUrQNYA1UNCJCxL2yqT_wc
+id: moderna_powered
+theme: moderna
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,26 @@
+uuid: 884484fb-4e5b-4cca-b0fc-d27157cb61b8
+langcode: ar
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - moderna
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: moderna_page_title
+theme: moderna
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /cards

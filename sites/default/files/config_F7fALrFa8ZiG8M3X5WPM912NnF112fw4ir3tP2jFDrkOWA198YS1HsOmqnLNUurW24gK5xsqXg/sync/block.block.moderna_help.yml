@@ -1,0 +1,22 @@
+uuid: d248c076-8e65-49a2-b0d1-581c049c2a7b
+langcode: ar
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - moderna
+_core:
+  default_config_hash: '-laWx8WA-ikiIEH3NJQ0hVbjqk3iEuBms91LB0B4IQU'
+id: moderna_help
+theme: moderna
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }
