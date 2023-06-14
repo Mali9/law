@@ -30,7 +30,7 @@ $info = [
   // Pre-defined color schemes.
   'schemes' => [
     'default' => [
-      'title' => t('Dar (default)'),
+      'title' => t('Law (default)'),
       'colors' => [
         'footer_bg' => '#841019',
         'footer_btn_bg' =>'#f5f3f3',
