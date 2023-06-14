@@ -1,0 +1,11 @@
+<?php
+
+use Drupal\Core\Entity\EntityInterface;
+
+
+
+
+function law_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
+
+}
+

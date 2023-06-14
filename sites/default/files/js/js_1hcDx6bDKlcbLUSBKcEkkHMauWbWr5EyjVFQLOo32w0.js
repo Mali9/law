@@ -8003,11 +8003,11 @@ $(document).ready(function() {
  
   var owl = $("#owl-slider");
  
-  owl.owlCarousel({
- autoPlay: 3000, //Set AutoPlay to 3 seconds
-    singleItem : true,
-    transitionStyle : "fade"
-  });
+//   owl.owlCarousel({
+//  autoPlay: 3000, //Set AutoPlay to 3 seconds
+//     singleItem : true,
+//     transitionStyle : "fade"
+//   });
  
 });
 

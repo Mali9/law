@@ -28,6 +28,8 @@
         "drupal/danland": "^1.1",
         "drupal/devel": "^4.1",
         "drupal/entityreference_filter": "^1.4",
+        "drupal/gin": "^3.0@rc",
+        "drupal/gin_toolbar": "^1.0@rc",
         "drupal/jquery_ui": "^1.4",
         "drupal/jsonapi_extras": "^3.20",
         "drupal/node_export": "^1.0@alpha",

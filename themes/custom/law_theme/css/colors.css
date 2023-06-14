@@ -1,0 +1,311 @@
+/* ---------- Color Module Styles ----------- */
+
+/* Primary css start */
+#site-footer,
+#views-exposed-form-dar-search-page-1 .btn-primary,
+.scroll-to-top,
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary,
+body[class*="page-user-register"] #main-wrapper .main-content form .form-actions .form-submit,
+body[class*="page-user-login"] #main-wrapper .main-content form .form-actions .form-submit,
+body[class*="page-user-password"] #main-wrapper .main-content form .form-actions .form-submit,
+body[class*="page-user-password"] #main-wrapper,
+.view-collections .glosary-group ul li .parent-section .parent-title span.title-toggle,
+.glosary-links li a:hover,
+body[class*="page-user-login"] #main-wrapper,
+body[class*="page-user-register"] #main-wrapper,
+[aria-label*="pagination-heading"] ul li.active,
+.header .navbar-form .region-top-header-form .menu--account .not-logedin [block="block-dar-account-menu"] a[class*="register"], .header .navbar-form .region-top-header-form .menu--account .not-logedin [block="block-dar-account-menu"] a[class*="login"],
+.view-flag-bookmark .field--name-dynamic-twig-fieldnode-print-link .print-link:after,
+.view-flag-bookmark .citation-record-link2::after,
+.view-flag-bookmark .addtoany_list .a2a_dd.addtoany_share span:first-of-type:after, 
+.view-flag-bookmark .addtoany_list .a2a_button_email span:first-of-type:after
+ {
+  background-color: #841018 !important;
+}
+.view-collections .glosary-group ul li .parent-section .parent-title span.title-toggle{
+  border: 1px solid #841018;
+}
+.card-info .model-count .views,
+.card-info .model-count .model,
+.card-info .model,
+[class*="block-views-blockrecent-additions-block"] .view-filters form.views-exposed-form .row fieldset .form-radios .js-form-type-radio input:checked + label,
+#navbar-top li.nav-item a.nav-link:hover,
+a.nav-link.is-active::after,
+.parent-section > .parent-title > a,
+.card-info .model a,
+.remove-all,
+.facets-widget-checkbox ul li.facet-item label:hover span.facet-item__value,
+.view-solr-search-content .search-page .head .facets .facet-summary-item--clear a,
+body[class*="page-user-login"] #main-wrapper .main-content .login-footer .power .naseej,
+body[class*="page-user-register"] #main-wrapper .main-content .login-footer .power .naseej,
+body[class*="page-user-register"] #main-wrapper .main-content details summary,
+.search-gray .search-page .view-dar-search.list .view-content.row > .views-row .card-info .subject .field__items .field__item::after,
+.more-link a,
+[class*='block-views-blockcollections'] .more-link a,
+#block-views-block-recent-additions-block-1 .more-link a::after,
+#block-views-block-most-viewed-block-1 .more-link a,
+#site-footer .top-footer form.webform-submission-form .form-actions .form-submit,
+.node__title,
+.view-flag-bookmark .template,
+.view-flag-bookmark .flag-actions .flag-bookmark a,
+.view-flag-bookmark .subject-value-bookmarks,
+.title_share [class*="field--name-field-"] .field__item a,
+.view-solr-search-content .search-page .head .content-head .right .saved-search .form-submit
+{
+  color: #841018 !important;
+}
+
+.facets-widget-checkbox ul li.facet-item label:hover::before, 
+/* .title_share .share .flag-bookmark > a, 
+.title_share .share .addtoany_list > a, 
+.title_share .share .report-record-link, 
+.title_share .share .citation-record-link,
+.title_share .share .field--name-dynamic-twig-fieldnode-print-link .print-link, */
+.header .navbar-form .region-top-header-form .menu--account .not-logedin [block="block-dar-account-menu"] a,
+.block-facet--checkbox .facets-widget-checkbox ul li.facet-item label:hover::before,
+.facets-widget-checkbox ul li.facet-item input[checked="checked"]:checked::before,
+.facets #block-fulltext-block #fulltext_switcher[checked="checked"]:checked::before,
+body[class*="page-user-register"] #main-wrapper .main-content form .js-form-type-checkbox input:checked + label::before,
+[class*="block-views-blockrecent-additions-block"] .view-filters form.views-exposed-form .row fieldset .form-radios .js-form-type-radio input:checked + label,
+.view-flag-bookmark .flag-actions .flag-bookmark a
+{
+  border: 2px solid #841018;
+}
+
+.facets-widget-checkbox ul li.facet-item input,
+.facets #block-fulltext-block #fulltext_switcher{
+  accent-color: #841018;
+}
+
+.block-facet--checkbox .facets-widget-checkbox ul li.facet-item input[checked="checked"] + label:after,
+body[class*="page-user-register"] #main-wrapper .main-content form .js-form-type-checkbox input:checked + label:after{
+  background: #841020;
+}
+.form-control:focus,
+select:focus,
+.custom-select:focus,
+input:focus,
+.btn:focus,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled):active:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #b11018 !important;
+  box-shadow: 0 0 0 0.2rem #b11018 !important
+}
+body[class*="page-user-login"] #main-wrapper .main-content form .form-actions,
+body[class*="page-user-register"] #main-wrapper .main-content form .form-actions {
+  -webkit-box-shadow: 0px 2px 4px #961728;
+  box-shadow: 0px 2px 4px #961728;
+}
+.title_share .share .addtoany_share path,
+.title_share .share .a2a_button_email path,
+.title_share .share .report-record-link path,
+.title_share .share .field--name-dynamic-twig-fieldnode-print-link .print-link path,
+.title_share .share .citation-record-link path,
+.title_share .share .flag-bookmark.action-unflag > a path{
+  fill: #841018;
+}
+.title_share .share .flag-bookmark.action-flag > a path{
+    stroke: #841018;
+}
+.dashboards-container .more-link a::after {
+  border-right: 1px solid #841018;
+  border-bottom: 1px #841018 solid;
+}
+
+/* Secondary colors */
+.view-solr-search-content .search-page .head .content-head .right .grid-list .active svg path,
+.title_share .download-item .field__item .button-action svg g{
+  fill: #07b9b0;
+}
+.bottom_pager [aria-label*="pagination-heading"] ul li.active,
+.title_share .download-item .field__item .button-action::after{
+  background-color: #07b9b0;
+}
+.title_share .download-item .field__item .button-action svg {
+  border: solid 2px #07b9b0;
+}
+
+.title_share .download-item #pdfjs-downloadbutton div,
+.print-item .title_share .field--name-field-display-title h2,
+.main-collection .collection-info .description .field__label,
+[class*="field--name-"] .views-element-container .dar-search-sub-collection-form .search-results__content .views-row .card .card-info .title .field__item,
+.webform-submission-contact-form #edit-contact-info .form-group h1{
+  color: #07b9b0;
+}
+
+/* search background */
+
+.islandora-advanced-search-form,
+.views-exposed-form[class*="block-views-exposed-filter-blocksolr-search-content-page-"]{
+  background-color: #01a89f;
+}
+
+/* breadcrumb */
+nav[aria-label="breadcrumb"],
+.dashboards-container .table thead tr,
+.view-saved-searches .table thead tr{
+  background-color: #0ca79f;
+}
+
+/* content Black and Gray Color */
+.card-info .publisher .val,
+.glosary-group h3,
+.parent-section .children-section .view-sub-collections .views-row .collection-sub-container .parent-section .parent-title a,
+.facets .title,
+.filter-item .txt
+{
+  color:#141414 !important;
+}
+.card-info .autor,
+.card-info .autor::after,
+.card-info .publisher .tit,
+.card-info .publisher::after,
+#block-dar-content .item-list ul li span,
+.facets .val,
+.facet-item__count
+{
+  color: #989898 !important;
+}
+
+.item-details-container .title_share .field__label,
+[class*="-tabs"] .details-wrapper .field__label,
+.main-collection .field__item,
+.view-solr-search-content .search-page .head .result .source-summary-count{
+  color: #9d9d9d;
+}
+.title_share [class*="field--name-field-"] .field__item,
+.card-info .title a,
+.title_share h2,
+[class*="block-views-blockrecent-additions-block"] h2, [class*="block-views-blockmost-viewed-block"] h2, 
+.view-solr-search-content h2,
+.item-wrapper .field__label,
+.main-collection .collection-info .description .field__item{
+  color: #333333;
+
+}
+
+/* header bg & menu */
+
+.header,
+.header nav#navbar-top{
+  background-color: #fffefe !important;
+}
+.header nav#navbar-top nav[role="navigation"] ul.navbar-nav li.nav-item a.nav-link{
+  color: #000000;
+}
+
+/* ---------- Color Form ----------- */
+
+[dir="rtl"] .color-form .color-palette {
+  margin-right: 20px;
+  margin-left: 0;
+}
+[dir="rtl"] .color-form .form-item label {
+  float: right;
+}
+[dir="rtl"] .color-form .color-palette .lock {
+  right: -20px;
+  left: 0;
+}
+
+/* ----------------- Custom color2 */
+
+
+/* ---------------------- Site Footer ------------------------- */
+#site-footer .top-footer form.webform-submission-form .form-actions .form-submit
+{
+  background-color: #f5f3f3 !important;
+}
+#site-footer .top-footer {
+  border-bottom: 2px solid #961728;
+}
+
+#site-footer .top-footer form.webform-submission-form .form-group .form-control.form-email{
+  border: 1px solid #841018;
+}
+
+#site-footer,
+#site-footer .top-footer .region-footer-first .navbar-nav a,
+#site-footer .top-footer .region-footer-first .block-webform-block h2,
+[class*="block-views-blockhome-collections-block"] h2,
+#site-footer .bottom-footer .region-footer-fourth .field{
+  color: #ffffff;
+}
+#site-footer{
+  background-color: #841019 !important;
+}
+#site-footer .webform-button--submit.btn-primary{
+  background-color: #ffffff ;
+}
+
+.btn-primary,
+.btn-primary:hover,
+#site-footer .top-footer form.webform-submission-form .form-actions .form-submit:hover{
+  color: #fffffe !important;
+}
+
+.btn-primary:hover,
+#site-footer .top-footer form.webform-submission-form .form-actions .form-submit:hover
+{
+  background-color: #b11018 !important;
+}
+
+ /*#site-footer .top-footer form.webform-submission-form .form-group .form-control.form-email {
+  background-color: #961728; 
+}*/
+
+#site-footer .bottom-footer #block-sharelinks #facebook, 
+#site-footer .bottom-footer #block-sharelinks #Path_12488, 
+#site-footer .bottom-footer #block-sharelinks #Path_12489, 
+#site-footer .bottom-footer #block-sharelinks #linkedin, 
+#site-footer .bottom-footer #block-sharelinks #Path_12490, 
+#site-footer .bottom-footer #block-sharelinks #Path_12491{
+       fill: #ffffff !important;
+       color: #ffffff !important;
+       background-color:#ffffff !important;
+}
+
+/* ------------------------------------- Search -----------------------------------*/
+
+.view-empty p{
+  color: #841018
+}
+
+.views-exposed-form[class*="block-views-exposed-filter-blocksolr-search-content-page-"][class*="block-views-exposed-filter-blocksolr-search-content-page"] form .links_container a,
+.islandora-advanced-search-form form .submit-container a{
+  color: #fffffe !important;
+}
+
+
+/*-------------------------------------------  Menu  -------------------------------------------*/
+
+#navbar-top li.nav-item a.nav-link::after{
+  background-color: #841018 !important;
+  color:#841018 !important;
+}
+
+
+.btn-primary,
+.header .navbar-form .region-top-header-form .menu--account .not-logedin [block="block-dar-account-menu"] a[class*="register"],
+.header .navbar-form .region-top-header-form .menu--account .not-logedin [block="block-dar-account-menu"] a
+{
+  color: #fffffe;
+}
+
+/*--------------------------------------------- Body ---------------------------------------------------*/
+.views-row .card .card-info .model p{
+  color:#841017;
+}
+
+.horizontal-tabs-list li.selected a,
+body[class*="page-user-login"] #main-wrapper .main-content nav.tabs ul li.active a, 
+body[class*="page-user-password"] #main-wrapper .main-content nav.tabs ul li.active a, 
+body[class*="page-user-register"] #main-wrapper .main-content nav.tabs ul li.active a,
+[class*="-tabs"] ul li.selected a{
+  color:#841018;
+  border-bottom: 3px solid #841018;
+}
+

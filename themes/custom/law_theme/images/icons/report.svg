@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22.026" height="18.929" viewBox="0 0 22.026 18.929">
+  <g id="newspaper" transform="translate(0 -36)">
+    <g id="Group_18600" data-name="Group 18600" transform="translate(0 36)">
+      <path id="Path_19816" data-name="Path 19816" d="M18.585,42.883V36H0V52.348a2.584,2.584,0,0,0,2.581,2.581H19.445a2.584,2.584,0,0,0,2.581-2.581V42.883Zm-16,10.325a.861.861,0,0,1-.86-.86V37.721H16.864V52.348a2.569,2.569,0,0,0,.148.86Zm17.724-.86a.86.86,0,0,1-1.721,0V44.6h1.721Zm-16.864-4.3h11.7V46.325H3.442Zm0,3.442h11.7V49.766H3.442Zm0-6.883h11.7V39.442H3.442Zm1.721-3.442h8.26v1.721H5.162Z" transform="translate(0 -36)" fill="#8a1222"/>
+    </g>
+  </g>
+</svg>

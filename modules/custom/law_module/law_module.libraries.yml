@@ -1,0 +1,4 @@
+# Custom module library for general purposes.
+law_module:
+  js:
+    js/custom.js: {}

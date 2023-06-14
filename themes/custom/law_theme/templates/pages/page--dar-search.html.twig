@@ -1,0 +1,99 @@
+{% extends 'page.html.twig' %}
+{% block content %}
+<div id="main" class="search-gray">
+    <div class="myoverlay">
+		<div class="blockloader"></div>
+	</div>
+    {{ page.breadcrumb }}
+    <div class="row-offcanvas row-offcanvas-left clearfix">
+      <main{{ content_attributes }} class="p-0 ">
+        <section class="section">
+          <div id="main-content" class="search-page" tabindex="-1">
+              <div class="row m-0 head info">
+                  <div class="facets">
+                    <div class="result">
+                        <div class="title">
+                            {{'Search result'|t}}
+                        </div>
+                        <div class="val">
+                            <span class="count">0</span>
+                            <div class="tit">{{'Results found'|t}}</div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="search-content">
+                    <div class="content-head">
+                        <div class="left">
+                            <section class="filter-items">
+				<div class="filter">
+                                     <div class="all-items">
+                                        <div class="items" id="items-dar"><div id="filter-items-dar" class="filter-item"></div></div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="right">
+                            <div class="sorted-by">
+    
+                            </div>
+                            <div class="grid-list ss" id="grid-list">
+                                <div class="list">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="25.998" viewBox="0 0 29 25.998">
+                                        <path id="Union_7" data-name="Union 7" d="M16.131,26a1,1,0,0,1-.37-.071,1,1,0,0,1-.37.071h-4.3a1,1,0,0,1-1-1V20.809a1,1,0,0,1,1-1h4.3a1,1,0,0,1,.37.071,1,1,0,0,1,.37-.071H28a1,1,0,0,1,1,1V25a1,1,0,0,1-1,1ZM1,26a1,1,0,0,1-1-1V20.809a1,1,0,0,1,1-1H5.3a1,1,0,0,1,1,1V25a1,1,0,0,1-1,1Zm14.391-9.9h-4.3a1,1,0,0,1-1-1V10.905a1,1,0,0,1,1-1H28a1,1,0,0,1,1,1v4.189a1,1,0,0,1-1,1ZM1,16.095a1,1,0,0,1-1-1V10.905a1,1,0,0,1,1-1H5.3a1,1,0,0,1,1,1v4.189a1,1,0,0,1-1,1Zm15.131-9.9a1,1,0,0,1-.37-.071,1,1,0,0,1-.37.071h-4.3a1,1,0,0,1-1-1V1a1,1,0,0,1,1-1h4.3a1,1,0,0,1,.37.071A1,1,0,0,1,16.131,0H28a1,1,0,0,1,1,1v4.19a1,1,0,0,1-1,1ZM1,6.191a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0H5.3a1,1,0,0,1,1,1v4.19a1,1,0,0,1-1,1Z" transform="translate(0 -0.001)" fill="#9d9d9d"/>
+                                    </svg>
+                                </div>
+                                <div class="grid">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25.997" height="25.998" viewBox="0 0 25.997 25.998">
+                                        <path id="Union_6" data-name="Union 6" d="M20.808,26a1,1,0,0,1-1-1V20.809a1,1,0,0,1,1-1H25a1,1,0,0,1,1,1V25a1,1,0,0,1-1,1Zm-9.9,0a1,1,0,0,1-1-1V20.809a1,1,0,0,1,1-1h4.19a1,1,0,0,1,1,1V25a1,1,0,0,1-1,1ZM1,26a1,1,0,0,1-1-1V20.809a1,1,0,0,1,1-1H5.19a1,1,0,0,1,1,1V25a1,1,0,0,1-1,1Zm19.808-9.9a1,1,0,0,1-1-1V10.905a1,1,0,0,1,1-1H25a1,1,0,0,1,1,1v4.189a1,1,0,0,1-1,1Zm-9.9,0a1,1,0,0,1-1-1V10.905a1,1,0,0,1,1-1h4.19a1,1,0,0,1,1,1v4.189a1,1,0,0,1-1,1Zm-9.9,0a1,1,0,0,1-1-1V10.905a1,1,0,0,1,1-1H5.19a1,1,0,0,1,1,1v4.189a1,1,0,0,1-1,1Zm19.808-9.9a1,1,0,0,1-1-1V1a1,1,0,0,1,1-1H25a1,1,0,0,1,1,1v4.19a1,1,0,0,1-1,1Zm-9.9,0a1,1,0,0,1-1-1V1a1,1,0,0,1,1-1h4.19a1,1,0,0,1,1,1v4.19a1,1,0,0,1-1,1Zm-9.9,0a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0H5.19a1,1,0,0,1,1,1v4.19a1,1,0,0,1-1,1Z" transform="translate(0 -0.001)" fill="#01a89f"/>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+              <div class="row m-0 head sort justify-content-center">
+                  <div class="filter-small">
+                      <span>{{'Sort By'|t}}</span>
+                      <div class="filter-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 971.986 971.986" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g>
+                            <g xmlns="http://www.w3.org/2000/svg">
+                                <path d="M370.216,459.3c10.2,11.1,15.8,25.6,15.8,40.6v442c0,26.601,32.1,40.101,51.1,21.4l123.3-141.3   c16.5-19.8,25.6-29.601,25.6-49.2V500c0-15,5.7-29.5,15.8-40.601L955.615,75.5c26.5-28.8,6.101-75.5-33.1-75.5h-873   c-39.2,0-59.7,46.6-33.1,75.5L370.216,459.3z" fill="#01a89f" data-original="#000000" style="" class=""/>
+                            </g>
+                        </g></svg>
+                      </div>
+                  </div>
+              </div>
+                <div class="row head cont m-0">
+                <div class="facets">
+
+                    {% if page.sidebar_first %}
+                    <div class="close">
+                        <span class="title">{{'Sort By'|t}}</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="11.167" height="11.221" viewBox="0 0 11.167 11.221">
+                            <path id="close_1_" data-name="close (1)" d="M6.37,5.519l4.193-4.193A.7.7,0,1,0,9.576.34L5.384,4.533,1.191.34A.7.7,0,0,0,.2,1.327L4.4,5.519.2,9.712a.7.7,0,1,0,.986.986L5.384,6.506,9.576,10.7a.7.7,0,1,0,.986-.986Zm0,0" transform="translate(0.2 0.118)" stroke="#141414" stroke-width="0.4"/>
+                        </svg>
+                    </div>
+                    <div class="sidebar-first">
+                        <aside class="section" role="complementary">
+                          
+                            {{ page.sidebar_first }}
+                        </aside>
+                    </div>
+                    {% endif %}
+                
+                </div>
+                <div class="search-content">
+                   
+                    {{ page.content }}
+                </div>
+            </div>
+          </div>
+         
+        </section>
+        </main>
+    
+</div>
+</div>
+
+{% endblock %}

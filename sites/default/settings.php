@@ -1,6 +1,6 @@
 <?php
-$conf['services_csrf_token_check_disabled'] = TRUE;
-$config['system.logging']['error_level'] = 'verbose';
+// $conf['services_csrf_token_check_disabled'] = TRUE;
+ $config['system.logging']['error_level'] = 'verbose';
 
 
 // phpcs:ignoreFile
@@ -773,13 +773,14 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array(
-  'database' => 'law1',
+  'database' => 'law',
   'username' => 'root',
-  'password' => 'Mohamed@123',
+  'password' => 'Password123#@!',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
+
 $settings['config_sync_directory'] = 'sites/default/files/config_F7fALrFa8ZiG8M3X5WPM912NnF112fw4ir3tP2jFDrkOWA198YS1HsOmqnLNUurW24gK5xsqXg/sync';
