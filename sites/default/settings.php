@@ -1,6 +1,6 @@
 <?php
 // $conf['services_csrf_token_check_disabled'] = TRUE;
- $config['system.logging']['error_level'] = 'verbose';
+//  $config['system.logging']['error_level'] = 'verbose';
 
 
 // phpcs:ignoreFile
@@ -651,7 +651,10 @@ $settings['update_free_access'] = FALSE;
 /**
  * Load services definition file.
  */
-$settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
+$settings['debug'] = TRUE;
+$settings['twig_config']['debug'] = TRUE;
+
+$settings['container_yamls'][] = '/sites/development.services.yml';
 
 /**
  * Override the default service container class.

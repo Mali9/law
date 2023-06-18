@@ -5,7 +5,158 @@ use Drupal\Core\Entity\EntityInterface;
 
 
 
-function law_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id){
 
+function law_module_preprocess_page(&$variables)
+{
+  $variables['#attached']['library'][] = 'law_module/custom_admin';
 }
 
+function law_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id)
+{
+
+  $arr = ['field--widget-text-textarea-with-summary', 'field--widget-text-textarea', 'field--widget-paragraphs', 'field--widget-string-textfield'];
+  if ($form_id == 'node_templates_form' || $form_id == 'node_page_form') {
+    $form['field_judicial_benefits']['#prefix'] = '
+    <div class="modal fade" id="field_judicial_benefits" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h6>إضغط لإختيار الإقتراح</h6>
+        
+          </div>
+          <div class="field_judicial_benefits_content">
+          
+          </div>
+        </div>
+        
+      </div>
+
+    </div>';
+
+    $form['field_regulations_and_circulars']['#prefix'] = '
+    <div class="modal fade" id="field_regulations_and_circulars" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h6>إضغط لإختيار الإقتراح</h6>
+          </div>
+
+          <div class="field_regulations_and_circulars_content">
+          </div>
+
+        </div>
+      </div>
+    </div>';
+
+    $form['field_distinctive_grounds']['#prefix'] = '
+    <div class="modal fade" id="field_distinctive_grounds" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h6>إضغط لإختيار الإقتراح</h6>
+          </div>
+          <div class="field_distinctive_grounds_content">
+          </div>
+
+        </div>
+      </div>
+    </div>';
+
+    $form['field_improper_administrative']['#prefix'] = '
+    <div class="modal fade" id="field_improper_administrative" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h6>إضغط لإختيار الإقتراح</h6>
+          </div>
+          <div class="field_improper_administrative_content">
+          </div>
+
+        </div>
+      </div>
+    </div>';
+
+
+    $form['body']['#prefix'] = '
+    <div class="modal fade" id="body1" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h6>إضغط لإختيار الإقتراح</h6>
+          </div>
+          <div class="body1_content">
+          </div>
+
+        </div>
+      </div>
+    </div>';
+
+    $form['field_legal_grounds']['#prefix'] = '
+    <div class="modal fade" id="field_legal_grounds" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h6>إضغط لإختيار الإقتراح</h6>
+          </div>
+          <div class="field_legal_grounds_content">
+          </div>
+
+        </div>
+      </div>
+    </div>';
+
+    $form['field_negatives']['#prefix'] = '
+    <div class="modal fade" id="field_negatives" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h6>إضغط لإختيار الإقتراح</h6>
+          </div>
+          <div class="field_negatives_content">
+          </div>
+
+        </div>
+      </div>
+    </div>';
+
+
+    $form['field_challenges_faced']['#prefix'] = '
+    <div class="modal fade" id="field_challenges_faced" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+          <h6>إضغط لإختيار الإقتراح</h6>
+          </div>
+          <div class="field_challenges_faced_content">
+          </div>
+
+        </div>
+      </div>
+    </div>';
+
+
+
+    $form['title']['#access'] = FALSE;
+    foreach ($form as $key => $element) {
+      if (is_array($element) && in_array($element["#attributes"]["class"][2], $arr)) {
+        $form[$key]['custom_button'] = [
+          '#type' => 'submit',
+          '#value' => t('Custom Button'),
+          '#weight' => 10,
+          // '#submit' => ['custom_add_button_submit'],
+          '#limit_validation_errors' => [],
+        ];
+      }
+    }
+  }
+}
+function law_module_node_presave(\Drupal\node\NodeInterface $node)
+{
+
+  if ($node->getType() == 'templates') {
+    $field_value = $node->get('field_invitation_number')->getValue();
+    if (!empty($field_value)) {
+      $node->setTitle($field_value[0]['value']);
+    }
+  }
+}

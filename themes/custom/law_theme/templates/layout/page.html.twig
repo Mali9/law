@@ -147,34 +147,38 @@
         <div class="pic" data-font="16">
           
         </div>
-        <div class="welcome" data-font="16">
-          <div class="loged-name" data-font="16">
-            <div class="wel" data-font="12">
-              أهلا 
-            </div>
-            <div class="username" data-font="16">
-              System1 Admin1
-              <div class="arrow" data-font="16">
-              </div>
-            </div>
-          </div>
+
         
-        </div>
+   {% if logged_in %}
+  <div class="welcome" data-font="16">
+    <div class="loged-name" data-font="16">
+      <div class="username" data-font="16">
+        أهلاً, {{current_user_name}}!
+        <div class="arrow" data-font="16"></div>
       </div>
-      <div class="logedin" data-font="16">
-        
-              <div id="block-useraccountmenu" class="clearfix nav navbar-nav" data-font="16">
-       
-              <li class="nav-item" data-font="16">
-                <a href="/ar/user/logout" class="nav-link nav-link--ar-user-logout" data-drupal-link-system-path="user/logout" data-font="15">تسجيل الخروج</a>
-        </li>
-            </div>
-      
+    </div>
+  </div>
+  <div class="logedin" data-font="16">
+    <div id="block-useraccountmenu" class="clearfix nav navbar-nav" data-font="16">
+      <li class="nav-item" data-font="16">
+        <a href="/ar/user/logout" class="nav-link nav-link--ar-user-logout" data-drupal-link-system-path="user/logout" data-font="15">تسجيل الخروج</a>
+      </li>
+    </div>
+  </div>
+{% else %}
+  {# <div class="logedin" data-font="16">
+    <div id="block-useraccountmenu" class="clearfix nav navbar-nav" data-font="16">
+      <li class="nav-item" data-font="16"> #}
 
 
       </div>
+   
       </nav>
-
+        <a href="/user/login" class="nav-link nav-link--ar-user-login" data-drupal-link-system-path="user/login" data-font="15">تسجيل الدخول</a>
+      {# </li>
+    </div>
+  </div> #}
+{% endif %}
 
   </section>
  </div>                              
@@ -196,7 +200,9 @@
         <div id="main-wrapper" class="layout-main-wrapper clearfix">
 
       {% block content %}
-      <div id="block-exposedformsolr-search-contentpage-1-2" class="views-exposed-form main-search-box contextual-region block block-views block-views-exposed-filter-blocksolr-search-content-page-1" data-drupal-selector="views-exposed-form-solr-search-content-page-1" data-font="16" style="font-size: 16px;">
+      <div id="block-exposedformsolr-search-contentpage-1-2"
+       class="views-exposed-form main-search-box contextual-region block block-views block-views-exposed-filter-blocksolr-search-content-page-1" 
+       data-drupal-selector="views-exposed-form-solr-search-content-page-1" data-font="16" style="font-size: 16px;  background-image: url('/sites/default/files/slider.jpeg');">
  
 </div>
       <div id="main">

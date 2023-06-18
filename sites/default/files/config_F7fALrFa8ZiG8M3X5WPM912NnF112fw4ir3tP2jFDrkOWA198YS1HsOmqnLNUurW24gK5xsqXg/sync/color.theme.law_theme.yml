@@ -1,0 +1,21 @@
+palette:
+  footer_bg: '#237a62'
+  footer_btn_bg: '#f5f3f3'
+  footer_text: '#ffffff'
+  header_menus: '#000000'
+  header_bg: '#fffefe'
+  search_bg: '#01a89f'
+  search_link: '#fffffe'
+  footer_border: '#01a89f'
+  content_label: '#9d9d9d'
+  content_value: '#333333'
+  primary: '#01a89f'
+  secondary: '#07b9b0'
+  primary_light: '#01a89f'
+  bread_crumb: '#0ca79f'
+logo: 'public://color/law_theme-b42522c1/logo.svg'
+stylesheets:
+  - 'public://color/law_theme-b42522c1/colors.css'
+files:
+  - 'public://color/law_theme-b42522c1/logo.png'
+  - 'public://color/law_theme-b42522c1/colors.css'

@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '6a6eabd94900d77ca9a156bfd81455bcdbb44d9a',
+        'reference' => 'f5e45093d00caa66e07eb578cfbc06cb8c9da916',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -589,7 +589,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '6a6eabd94900d77ca9a156bfd81455bcdbb44d9a',
+            'reference' => 'f5e45093d00caa66e07eb578cfbc06cb8c9da916',
             'dev_requirement' => false,
         ),
         'drupal/node_export' => array(
@@ -653,6 +653,15 @@
             'install_path' => __DIR__ . '/../../modules/contrib/token',
             'aliases' => array(),
             'reference' => '8.x-1.11',
+            'dev_requirement' => false,
+        ),
+        'drupal/twig_debugger' => array(
+            'pretty_version' => '1.1.3',
+            'version' => '1.1.3.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/twig_debugger',
+            'aliases' => array(),
+            'reference' => '1.1.3',
             'dev_requirement' => false,
         ),
         'drupal/video_embed_field' => array(

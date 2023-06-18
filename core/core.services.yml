@@ -12,7 +12,7 @@ parameters:
     sid_length: 48
     sid_bits_per_character: 6
   twig.config:
-    debug: false
+    debug: TRUE
     auto_reload: null
     cache: true
     allowed_file_extensions:
@@ -27,7 +27,7 @@ parameters:
       max-age: 0
       contexts: ['session', 'user']
       tags: []
-    debug: false
+    debug: TRUE
   factory.keyvalue:
     default: keyvalue.database
   http.response.debug_cacheability_headers: false

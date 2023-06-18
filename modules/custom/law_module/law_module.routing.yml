@@ -1,0 +1,7 @@
+law_module.get_default_values:
+  path: '/get_default_values/{category}'
+  defaults:
+    _controller: '\Drupal\law_module\Controller\ReportController::get_default_values' 
+    _title: 'List of default values'
+  requirements:
+    _permission: 'access content'

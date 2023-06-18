@@ -1,4 +1,11 @@
 # Custom module library for general purposes.
-law_module:
+custom_admin:
   js:
-    js/custom.js: {}
+    js/custom.js: {},
+    https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js: {},
+    https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.js: {},
+  css:
+    component:
+      css/custom.css: {},
+      https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.css: {},
+      https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.css: {}

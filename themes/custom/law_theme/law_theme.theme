@@ -31,5 +31,7 @@
    ];
    $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['opensans'] = 'Open Sans';
  }
-
+ function law_theme_preprocess(&$variables, $hook, $info) {
+  $variables['current_user_name'] = $variables['user']->getDisplayName();
+}
  

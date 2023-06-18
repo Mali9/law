@@ -10,6 +10,7 @@ dependencies:
     - filter
     - search
     - system
+    - twig_debugger
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
 id: anonymous
@@ -20,5 +21,6 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
+  - 'administer twig debugger configuration'
   - 'search content'
   - 'use text format restricted_html'
