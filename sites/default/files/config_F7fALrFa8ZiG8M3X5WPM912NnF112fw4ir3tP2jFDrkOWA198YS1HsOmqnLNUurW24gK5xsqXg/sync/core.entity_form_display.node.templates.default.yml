@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.templates.body
+    - field.field.node.templates.field_card_image
     - field.field.node.templates.field_case_age_
     - field.field.node.templates.field_category
     - field.field.node.templates.field_challenges_faced
@@ -15,8 +16,10 @@ dependencies:
     - field.field.node.templates.field_legal_grounds
     - field.field.node.templates.field_negatives
     - field.field.node.templates.field_regulations_and_circulars
+    - image.style.thumbnail
     - node.type.templates
   module:
+    - image
     - paragraphs
     - text
 id: node.templates.default
@@ -33,6 +36,14 @@ content:
       summary_rows: 3
       placeholder: ''
       show_summary: false
+    third_party_settings: {  }
+  field_card_image:
+    type: image_image
+    weight: 26
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_case_age_:
     type: number

@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.templates.body
+    - field.field.node.templates.field_card_image
     - field.field.node.templates.field_case_age_
     - field.field.node.templates.field_category
     - field.field.node.templates.field_challenges_faced
@@ -39,6 +40,7 @@ content:
     weight: 100
     region: content
 hidden:
+  field_card_image: true
   field_case_age_: true
   field_category: true
   field_challenges_faced: true

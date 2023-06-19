@@ -15,7 +15,7 @@ function law_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
 {
 
   $arr = ['field--widget-text-textarea-with-summary', 'field--widget-text-textarea', 'field--widget-paragraphs', 'field--widget-string-textfield'];
-  if ($form_id == 'node_templates_form' || $form_id == 'node_page_form') {
+  if ($form_id == 'node_templates_form') {
     $form['field_judicial_benefits']['#prefix'] = '
     <div class="modal fade" id="field_judicial_benefits" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
       <div class="modal-dialog" role="document">
