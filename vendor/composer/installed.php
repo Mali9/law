@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '639809e96c6371071cacc8778ec56f299535dfba',
+        'reference' => '6304f1226a25394981045899c5d2941091b1d3e1',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -242,6 +242,15 @@
             'install_path' => __DIR__ . '/../../modules/contrib/admin_toolbar',
             'aliases' => array(),
             'reference' => '3.4.1',
+            'dev_requirement' => false,
+        ),
+        'drupal/backup_migrate' => array(
+            'pretty_version' => '5.0.3',
+            'version' => '5.0.3.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/backup_migrate',
+            'aliases' => array(),
+            'reference' => '5.0.3',
             'dev_requirement' => false,
         ),
         'drupal/better_exposed_filters' => array(
@@ -589,7 +598,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '639809e96c6371071cacc8778ec56f299535dfba',
+            'reference' => '6304f1226a25394981045899c5d2941091b1d3e1',
             'dev_requirement' => false,
         ),
         'drupal/node_export' => array(
