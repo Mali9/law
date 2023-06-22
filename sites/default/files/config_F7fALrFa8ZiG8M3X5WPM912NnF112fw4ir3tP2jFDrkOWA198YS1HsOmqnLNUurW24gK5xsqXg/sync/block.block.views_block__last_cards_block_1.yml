@@ -35,4 +35,4 @@ visibility:
   request_path:
     id: request_path
     negate: true
-    pages: "/cards\r\n/node/*\r\n/about\r\n/get_reports"
+    pages: "/cards\r\n/node/*\r\n/about\r\n/get_reports\r\n/filter_cards"
