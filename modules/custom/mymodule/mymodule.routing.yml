@@ -1,7 +1,0 @@
-mymodule.content:
-    path: '/mymodule'
-    defaults:
-        _controller: '\Drupal\mymodule\Controller\FirstController::content'
-        _title: 'my first controller'
-    requirements: 
-        _permission: 'access content'

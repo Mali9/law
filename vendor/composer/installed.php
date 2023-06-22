@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'bc4cd55ff07dce8d9fba9204057f337181aff071',
+        'reference' => '639809e96c6371071cacc8778ec56f299535dfba',
         'name' => 'drupal/legacy-project',
         'dev' => true,
     ),
@@ -589,7 +589,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'bc4cd55ff07dce8d9fba9204057f337181aff071',
+            'reference' => '639809e96c6371071cacc8778ec56f299535dfba',
             'dev_requirement' => false,
         ),
         'drupal/node_export' => array(
@@ -626,6 +626,15 @@
             'install_path' => __DIR__ . '/../../modules/contrib/quick_node_clone',
             'aliases' => array(),
             'reference' => '8.x-1.16',
+            'dev_requirement' => false,
+        ),
+        'drupal/redirect' => array(
+            'pretty_version' => '1.8.0',
+            'version' => '1.8.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/redirect',
+            'aliases' => array(),
+            'reference' => '8.x-1.8',
             'dev_requirement' => false,
         ),
         'drupal/restui' => array(

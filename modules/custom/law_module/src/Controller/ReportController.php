@@ -86,4 +86,72 @@ class ReportController extends ControllerBase
     // dd($response);
     return new JsonResponse($response);
   }
+
+
+  function get_report_values()
+  {
+
+    $nids = \Drupal::entityQuery('node')
+      ->condition('type', 'templates')
+      ->condition('langcode', 'ar')->execute();
+    $nodes =  \Drupal\node\Entity\Node::loadMultiple($nids);
+
+    $superintendent = \Drupal::entityQuery('node')
+      ->condition('type', 'templates')
+      ->condition('langcode', 'ar')
+      ->condition('field_category', 2)->count()->execute();
+
+    $poor = \Drupal::entityQuery('node')
+      ->condition('type', 'templates')
+      ->condition('langcode', 'ar')
+      ->condition('field_category', 1)->count()->execute();
+
+
+
+    $Primaryquery = \Drupal::entityQuery('node')
+      ->condition('type', 'templates')
+      ->condition('langcode', 'ar');
+    $Primarygroup = $Primaryquery->orConditionGroup();
+    $Primarygroup->condition("field_judgments_issued.entity.field_judgments_issued", 3);
+    $Primaryquery->condition($Primarygroup);
+    $PrimaryJudgments = $Primaryquery->count()->execute();
+
+    $Resumptionquery = \Drupal::entityQuery('node')
+      ->condition('type', 'templates')
+      ->condition('langcode', 'ar');
+    $Resumptiongroup = $Resumptionquery->orConditionGroup();
+    $Resumptiongroup->condition("field_judgments_issued.entity.field_judgments_issued", 4);
+    $Resumptionquery->condition($Resumptiongroup);
+    $ResumptionJudgments = $Resumptionquery->count()->execute();
+
+    $supremequery = \Drupal::entityQuery('node')
+      ->condition('type', 'templates')
+      ->condition('langcode', 'ar');
+    $supremegroup = $supremequery->orConditionGroup();
+    $supremegroup->condition("field_judgments_issued.entity.field_judgments_issued", 6);
+    $supremequery->condition($supremegroup);
+    $supremeJudgments = $supremequery->count()->execute();
+
+    $query = \Drupal::entityQuery('node')
+      ->condition('type', 'templates')
+      ->condition('langcode', 'ar');
+    $group = $query->orConditionGroup();
+    $group->condition("field_judgments_issued.entity.field_judgments_issued", 5);
+    $query->condition($group);
+    $vetoJudgments = $query->count()->execute();
+
+    $cardNum = count($nodes);
+
+    return [
+      '#theme' => 'reports',
+      '#cardNum' => $cardNum,
+      '#superintendent' => $superintendent,
+      '#poor' => $poor,
+      '#PrimaryJudgments' => $PrimaryJudgments,
+      '#ResumptionJudgments' => $ResumptionJudgments,
+      '#supremeJudgments' => $supremeJudgments,
+      '#vetoJudgments' => $vetoJudgments,
+
+    ];
+  }
 }

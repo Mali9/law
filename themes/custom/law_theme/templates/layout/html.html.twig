@@ -26,21 +26,17 @@
 #}
 {%
   set body_classes = [
-    logged_in ? 'user-logged-in' : 'user-logged-out',
-    is_front ? 'path-frontpage' : 'path-not-frontpage',
-    root_path ? 'path-' ~ root_path|clean_class,
-    path_info.args ? 'path-' ~ path_info.args,
-    path_info.query ? 'path-query-' ~ path_info.query,
-    head_title.title ? 'path-' ~ head_title.title|clean_class,
-    node_type ? 'page-node-type--' ~ node_type|clean_class,
-    head_title_array.name ? 'site-name--' ~ head_title_array.name|clean_class,
-    theme.name ? 'theme-name--' ~ theme.name|clean_class,
+    logged_in ? 'user-logged-in',
+    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+    node_type ? 'node--type-' ~ node_type|clean_class,
     db_offline ? 'db-offline',
   ]
 %}
 <!DOCTYPE html>
 <html{{ html_attributes }}>
   <head>
+  <link rel="icon" href="/sites/default/files/logo.svg">
+
     <head-placeholder token="{{ placeholder_token|raw }}">
     <title>{{ head_title|safe_join(' | ') }}</title>
     <css-placeholder token="{{ placeholder_token|raw }}">
@@ -56,18 +52,3 @@
     <js-bottom-placeholder token="{{ placeholder_token|raw }}">
   </body>
 </html>
-
-  <style>
-    {% if default_search_img_url %}
-      .views-row .card .image-container{
-        background-image: url({{default_search_img_url}});
-      }
-    {% endif %}
-    {% if default_collection_img_url %}
-      .dar-search-collection-form .views-row .card .image-container .views-element-container{
-        background-image: url({{default_collection_img_url}});
-      }
-    {% endif %}
-
-  </style>
-

@@ -34,5 +34,5 @@ visibility:
       ar: ar
   request_path:
     id: request_path
-    negate: false
-    pages: /home
+    negate: true
+    pages: "/cards\r\n/node/*\r\n/about\r\n/get_reports"

@@ -21251,14 +21251,14 @@ $connection->insert('locales_source')
   'lid' => '1437',
   'location' => '/?q=zu/admin/settingsjhkjg',
   'textgroup' => 'default',
-  'source' => 'Page not found',
+  // 'source' => 'Page not found',
   'version' => '6.38-dev',
 ))
 ->values(array(
   'lid' => '1438',
   'location' => '/?q=zu/admin/settingsjhkjg',
   'textgroup' => 'default',
-  'source' => 'The requested page could not be found.',
+  <!-- 'source' => 'The requested page could not be found.', -->
   'version' => '6.38-dev',
 ))
 ->values(array(

@@ -36,6 +36,7 @@
         "drupal/paragraphs": "^1.15",
         "drupal/pathauto": "^1.9",
         "drupal/quick_node_clone": "^1.16",
+        "drupal/redirect": "^1.8",
         "drupal/restui": "^1.20",
         "drupal/scheduler": "^1.4",
         "drupal/simple_gmap": "^3.0",

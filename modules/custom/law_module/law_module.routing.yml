@@ -5,3 +5,20 @@ law_module.get_default_values:
     _title: 'List of default values'
   requirements:
     _permission: 'access content'
+
+law_module.get_report_values:
+  path: '/get_reports'
+  defaults:
+    _controller: '\Drupal\law_module\Controller\ReportController::get_report_values' 
+    _title: 'List of Report values'
+  requirements:
+    _permission: 'access content'
+
+law_module.home:
+  path: '/'
+  defaults:
+    _controller: '\Drupal\law_module\Controller\ReportController::get_report_values' 
+    _title: 'List of Report values'
+  requirements:
+    _permission: 'access content'
+    

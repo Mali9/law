@@ -53,7 +53,7 @@ class Http4xxController extends ControllerBase {
    */
   public function on404() {
     return [
-      '#markup' => $this->t('The requested page could not be found.'),
+      // '#markup' => $this->t('The requested page could not be found.'),
     ];
   }
 

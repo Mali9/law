@@ -1,3 +1,4 @@
+
 .modal-content>div {
     display: contents !important;
     background: rgba(0, 0, 0, 0.5) !important;
@@ -57,10 +58,6 @@
     --gray5: #2a2e35;
     --gray6: #12181b;
     --nav-width: 4em;
-    --font-body: "sofia-pro", sans-serif;
-    --font-head: "sofia-pro", sans-serif;
-    --font-code: "attribute-mono", monospace;
-    --font-size: 20px;
     --max-width-bp: 768px;
     --orange-pink: linear-gradient(to bottom right, var(--orange-light), var(--orange-dark) 85%);
     --green-grad: linear-gradient(to bottom right, var(--green-light), var(--green-dark) 85%);
@@ -79,6 +76,30 @@
     --nav-border: 2px dashed var(--text-color);
     --card-radius: 0.25em;
     transition: all .3s ease
+}
+
+/* #block-law-theme-content{
+    display: none;
+} */
+
+
+
+/* .header nav#navbar-top nav[role="navigation"] ul.navbar-nav {
+    margin-right: 80px !important;
+    color: #1c614e !important;
+    font-size: 1.0625rem !important;
+    cursor: pointer;
+    font-family: var(--bs-body-font-family) !important;
+
+} */
+
+.header nav#navbar-top nav[role="navigation"] ul.navbar-nav li.nav-item a.nav-link {
+    font-size: 1.0625rem !important;
+    margin-right: 60px !important;
+
+    /* font-weight: 600 !important; */
+    color: #1c614e !important;
+    font-family: var(--bs-body-font-family) !important;
 }
 
 .tag {

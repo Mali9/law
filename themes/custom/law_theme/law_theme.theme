@@ -1,37 +1,58 @@
 <?php
+
 /**
  * @file
  * Functions to support theming in the BD Client SASS Starterkit subtheme.
  */
 
- use Drupal\Core\Form\FormStateInterface;
- use Drupal\Core\Url;
- use Drupal\file\Entity\File;
- use Drupal\Core\Render\Element;
- use Drupal\media\Entity\Media;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+use Drupal\file\Entity\File;
+use Drupal\Core\Render\Element;
+use Drupal\media\Entity\Media;
 
 
 
- function law_theme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
-   $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
-     'bg-primary' => t('Primary'),
-     'bg-secondary' => t('Secondary'),
-     'bg-light' => t('Light'),
-     'bg-dark' => t('Dark'),
-     'bg-white' => t('White'),
-     'bg-transparent' => t('Transparent'),
-   ];
-   $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
-     'bg-primary' => t('Primary'),
-     'bg-secondary' => t('Secondary'),
-     'bg-light' => t('Light'),
-     'bg-dark' => t('Dark'),
-     'bg-white' => t('White'),
-     'bg-transparent' => t('Transparent'),
-   ];
-   $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['opensans'] = 'Open Sans';
- }
- function law_theme_preprocess(&$variables, $hook, $info) {
+function law_theme_form_system_theme_settings_alter(&$form, FormStateInterface $form_state)
+{
+  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = [
+    'bg-primary' => t('Primary'),
+    'bg-secondary' => t('Secondary'),
+    'bg-light' => t('Light'),
+    'bg-dark' => t('Dark'),
+    'bg-white' => t('White'),
+    'bg-transparent' => t('Transparent'),
+  ];
+  $form['fonts']['fonts']['bootstrap_barrio_google_fonts']['#options']['opensans'] = 'Open Sans';
+}
+function law_theme_preprocess(&$variables, $hook, $info)
+{
   $variables['current_user_name'] = $variables['user']->getDisplayName();
 }
- 
+
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function law_theme_page_attachments_alter(array &$attachments)
+{
+  // Get the current route match.
+  $routeMatch = \Drupal::routeMatch();
+  if ($routeMatch->getRouteName() == 'system.404') {
+    $attachments['#attached']['html_head'][] = [
+      [
+        '#tag' => 'title',
+        '#value' => t('home'),
+      ],
+      'custom_page_tab_title',
+    ];
+  }
+}

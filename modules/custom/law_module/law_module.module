@@ -21,7 +21,7 @@ function law_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-          <h6>إضغط لإختيار الإقتراح</h6>
+          <h6>الإقتراحات</h6>
         
           </div>
           <div class="field_judicial_benefits_content">
@@ -38,7 +38,7 @@ function law_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-          <h6>إضغط لإختيار الإقتراح</h6>
+          <h6>الإقتراحات</h6>
           </div>
 
           <div class="field_regulations_and_circulars_content">
@@ -53,7 +53,7 @@ function law_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-          <h6>إضغط لإختيار الإقتراح</h6>
+          <h6>الإقتراحات</h6>
           </div>
           <div class="field_distinctive_grounds_content">
           </div>
@@ -67,7 +67,7 @@ function law_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-          <h6>إضغط لإختيار الإقتراح</h6>
+          <h6>الإقتراحات</h6>
           </div>
           <div class="field_improper_administrative_content">
           </div>
@@ -82,7 +82,7 @@ function law_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-          <h6>إضغط لإختيار الإقتراح</h6>
+          <h6>الإقتراحات</h6>
           </div>
           <div class="body1_content">
           </div>
@@ -96,7 +96,7 @@ function law_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-          <h6>إضغط لإختيار الإقتراح</h6>
+          <h6>الإقتراحات</h6>
           </div>
           <div class="field_legal_grounds_content">
           </div>
@@ -110,7 +110,7 @@ function law_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-          <h6>إضغط لإختيار الإقتراح</h6>
+          <h6>الإقتراحات</h6>
           </div>
           <div class="field_negatives_content">
           </div>
@@ -125,7 +125,7 @@ function law_module_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $for
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-          <h6>إضغط لإختيار الإقتراح</h6>
+          <h6>الإقتراحات</h6>
           </div>
           <div class="field_challenges_faced_content">
           </div>
@@ -159,4 +159,16 @@ function law_module_node_presave(\Drupal\node\NodeInterface $node)
       $node->setTitle($field_value[0]['value']);
     }
   }
+}
+
+function law_module_theme($path, &$variables)
+{
+  return [
+    'reports' => [
+      'template' => 'reports',
+      'variables' => [
+        'cardNum' => [], 'superintendent' => [], 'poor' => [], 'PrimaryJudgments' => [], 'ResumptionJudgments' => [], 'supremeJudgments' => [], 'vetoJudgments' => []
+      ],
+    ],
+  ];
 }

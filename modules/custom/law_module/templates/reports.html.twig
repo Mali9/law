@@ -1,0 +1,75 @@
+<style>
+
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
+
+</style>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
+">
+
+<div class="jumbotron">
+<div class="row w-100">
+        <div class="col-md-3">
+            <div class="card border-info mx-sm-1 p-3">
+                <div class="text-warning text-center mt-3"><h4>الاحكام من الدرجه الاولى </h4></div>
+                <div class="text-warning text-center mt-2"><h1>{{PrimaryJudgments}}</h1></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+                <div class="text-success text-center mt-3"><h4>عدد قضايا الوقف </h4></div>
+                <div class="text-success text-center mt-2"><h1>{{poor}}</h1></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="text-danger text-center mt-3"><h4>عدد قضايا العزل </h4></div>
+                <div class="text-danger text-center mt-2"><h1>{{superintendent}}</h1></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-warning mx-sm-1 p-3">
+                <div class="text-info text-center mt-3"><h4>أجمالى عدد البطاقات </h4></div>
+                <div class="text-info text-center mt-2"><h1>{{cardNum}}</h1></div>
+            </div>
+        </div>
+     </div>
+     <br>
+     <br>
+<div class="row w-100">
+        {# <div class="col-md-3">
+            <div class="card border-info mx-sm-1 p-3">
+                <div class="text-info text-center mt-3"><h4>أجمالى عدد البطاقات </h4></div>
+                <div class="text-info text-center mt-2"><h1>{{cardNum}}</h1></div>
+            </div>
+        </div> #}
+        <div class="col-md-3">
+            <div class="card border-success mx-sm-1 p-3">
+                <div class="text-success text-center mt-3"><h4>الاحكام من عليا التماس</h4></div>
+                <div class="text-success text-center mt-2"><h1>{{supremeJudgments}}</h1></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-danger mx-sm-1 p-3">
+                <div class="text-danger text-center mt-3"><h4> الاحكام من عليا نقض</h4></div>
+                <div class="text-danger text-center mt-2"><h1>{{vetoJudgments}}</h1></div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card border-warning mx-sm-1 p-3">
+                <div class="text-warning text-center mt-3"><h4>الاحكام من الاستئناف </h4></div>
+                <div class="text-warning text-center mt-2"><h1>{{ResumptionJudgments}}</h1></div>
+            </div>
+        </div>
+     </div>     
+</div>
